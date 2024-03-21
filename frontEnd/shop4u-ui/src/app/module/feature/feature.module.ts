@@ -14,6 +14,9 @@ import { HomeComponent } from './home/home.component';
   imports: [
     CommonModule,
     FeatureRoutingModule
+  ],
+  exports: [
+    FeatureComponent
   ]
 })
 export class FeatureModule { }
