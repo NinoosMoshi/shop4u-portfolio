@@ -1,22 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HomeComponent } from './components/home/home.component';
+import { MainCarouselComponent } from './components/home/main-carousel/main-carousel.component';
+import { ProductCardSliderComponent } from './components/home/product-card-slider/product-card-slider.component';
+import { SliderProductCardComponent } from './components/home/slider-product-card/slider-product-card.component';
+import { ProductsComponent } from './components/products/products.component';
 
-import { FeatureRoutingModule } from './feature-routing.module';
-import { FeatureComponent } from './feature.component';
-import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
   declarations: [
-    FeatureComponent,
-    HomeComponent
+    HomeComponent,
+    MainCarouselComponent,
+    ProductCardSliderComponent,
+    SliderProductCardComponent,
+    ProductsComponent
   ],
   imports: [
     CommonModule,
-    FeatureRoutingModule
   ],
   exports: [
-    FeatureComponent
+    HomeComponent,
+    ProductsComponent
   ]
 })
 export class FeatureModule { }
